@@ -1,0 +1,99 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLOR THEME */
+:root {
+  --bg: #020617;
+  --card: #0f172a;
+  --primary: #38bdf8;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 16px;
+  background: var(--card);
+}
+
+.navbar a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+}
+
+/* SIGNUP HEADING */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* FORM CARD */
+form {
+  max-width: 360px;
+  margin: auto;
+  background: var(--card);
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* INPUTS */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: var(--text);
+  font-size: 14px;
+}
+
+form input::placeholder {
+  color: var(--muted);
+}
+
+/* BUTTON */
+form button {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary);
+  color: #020617;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 480px) {
+  form {
+    margin: 20px;
+  }
+}
